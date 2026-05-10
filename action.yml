@@ -1,0 +1,19 @@
+name: 'PR Description Improver'
+description: 'Suggests improvements to pull request descriptions, focusing on clarity, completeness, and conciseness.'
+author: 'walshd1'
+branding:
+  icon: 'zap'
+  color: 'blue'
+inputs:
+  gemini_api_key:
+    description: 'Gemini API key (free)'
+    required: false
+  service_token:
+    description: 'Service token (paid)'
+    required: false
+outputs:
+  result:
+    description: 'Result'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
